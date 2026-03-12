@@ -12,15 +12,15 @@
   <div id="logoPan"> <img src="/images/logo.gif" width="192" height="92" alt="" id="logo" /> <img src="/images/slogan.gif" width="297" height="46" alt="" id="slogan" /> </div>
   <div id="menuPan">
     <ul class="menu">
-      <li class="btn_1"><a href="#">home page</a></li>
+      <li class="btn_1"><a href="/">home page</a></li>
       <li class="line"></li>
-      <li class="btn_2"><a href="#">about us</a></li>
+      <li class="btn_2"><a href="/about-us">about us</a></li>
       <li class="line"></li>
-      <li class="btn_3"><a href="#">bouquets</a></li>
+      <li class="btn_3"><a href="/bouquets">bouquets</a></li>
       <li class="line"></li>
-      <li class="btn_4"><a href="#">specials</a></li>
+      <li class="btn_4"><a href="/specials">specials</a></li>
       <li class="line"></li>
-      <li class="btn_5"><a href="#">contacts</a></li>
+      <li class="btn_5"><a href="/contacts">contacts</a></li>
     </ul>
   </div>
   <div id="header"> <img src="/images/slogan2.gif" width="192" height="70" alt="" id="slogan2" /></div>
@@ -28,18 +28,18 @@
     <div id="leftPan">
   <div id="welcome">
     <h2></h2>
-    <img src="images/img_welcome.jpg" width="172" height="56" alt="" />
-    <p class="headline">Welcome to our flower shop, where every bouquet is crafted with care and elegance.</p>
-    <p>We offer a beautiful selection of fresh flowers for every occasion. From romantic roses to cheerful seasonal arrangements, our designs are made to bring joy, warmth, and color to your special moments.</p>
+        <img src="/images/img_welcome.jpg" width="172" height="56" alt="" />
+        <p class="headline"><%= page.leftHeadline %></p>
+        <p><%= page.leftText %></p>
   </div>
 </div>
 
 <div id="rightPan">
   <div id="featured">
     <h2></h2>
-    <p class="headline">Discover our featured floral arrangements, designed to make every celebration more memorable and meaningful.</p>
+        <p class="headline"><%= page.rightHeadline %></p>
     <div class="featItem" id="i01">
-      <img src="images/img_prod.jpg" width="116" height="125" alt="" />
+          <img src="/images/img_prod.jpg" width="116" height="125" alt="" />
       <p><span class="headline2">Elegant Flower Basket</span><br />
         <a href="#">Fresh and beautiful blooms</a><br />
         Perfect for birthdays, anniversaries, and special celebrations.</p>
@@ -63,12 +63,12 @@
 </div>
 <div id="footer">
   <p>
-    <a href="#">HOME PAGE</a> | 
-    <a href="#">ABOUT US</a> | 
-    <a href="#">BOUQUETS</a> | 
-    <a href="#">SPECIAL OFFERS</a> | 
+    <a href="/">HOME PAGE</a> | 
+    <a href="/about-us">ABOUT US</a> | 
+    <a href="/bouquets">BOUQUETS</a> | 
+    <a href="/specials">SPECIAL OFFERS</a> | 
     <a href="#">NEWS</a> | 
-    <a href="#">CONTACTS</a><br/>
+    <a href="/contacts">CONTACTS</a><br/>
     Copyright &copy; 2026 Your Company Name. All rights reserved. |
     Template design by <a href="http://freshtemplates.com/">FreshTemplates</a>
   </p>
