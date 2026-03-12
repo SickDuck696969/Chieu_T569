@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký tài khoản</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; background: #f8dae8; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .form-container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 300px; }
+        .form-container h2 { text-align: center; color: #9d1263; margin-top: 0; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #868e36; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        button:hover { background-color: #6b722b; }
+        .link { text-align: center; margin-top: 15px; font-size: 13px; }
+        .link a { color: #868e36; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Tạo tài khoản mới</h2>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Tên đăng nhập" required>
+            <input type="password" name="password" placeholder="Mật khẩu" required>
+            <input type="password" name="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+            <button type="submit">Đăng ký</button>
+        </form>
+        <div class="link">
+            Đã có tài khoản? <a href="/login">Quay lại Đăng nhập</a>
+        </div>
+    </div>
+</body>
+</html>
